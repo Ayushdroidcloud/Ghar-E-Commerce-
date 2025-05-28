@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+<h2>Welcome {{ user.name }}</h2>
+<p>Your balance: {{ user.balance }} 𑁍</p>
+<h3>Send Gharik</h3>
+<form method="POST">
+  To (ID): <input type="text" name="to" required><br>
+  Amount: <input type="number" name="amount" required><br>
+  <button type="submit">Send</button>
+</form>
+<a href="/logout">Logout</a>
+</body>
+</html>
