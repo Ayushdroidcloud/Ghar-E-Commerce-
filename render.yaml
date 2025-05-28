@@ -3,11 +3,7 @@ services:
     name: gharik-wallet
     runtime: python
     buildCommand: ""
-    startCommand: python app.py
+    startCommand: gunicorn app:app
     envVars:
       - key: PYTHON_VERSION
         value: 3.10
-      - key: PORT
-        value: 10000
-    region: oregon
-    plan: free
