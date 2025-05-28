@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: gharik-wallet
+    runtime: python
+    buildCommand: ""
+    startCommand: python app.py
+    env: python
+    region: oregon
+    plan: free
