@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Admin Panel</title></head>
+<body>
+<h2>Admin Dashboard</h2>
+<h3>All Users</h3>
+<ul>
+{% for uid, info in users.items() %}
+<li>{{ uid }} ({{ info.name }}) - {{ info.balance }} 𑁍, Joined: {{ info.joined }}</li>
+{% endfor %}
+</ul>
+<h3>Transactions</h3>
+<ul>
+{% for t in transactions %}
+<li>{{ t.time }} - {{ t.from }} → {{ t.to }} = {{ t.amount }} 𑁍</li>
+{% endfor %}
+</ul>
+</body>
+</html>
